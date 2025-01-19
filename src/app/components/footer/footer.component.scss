@@ -30,10 +30,23 @@
         }
       }
 
-      &:hover,
-      path:hover {
+      &:hover {
         color: variables.$gray-40;
       }
     }
+  }
+
+  &__icon {
+    @include mixin.radius(17px, auto, 0);
+
+    path {
+      color: variables.$gray-60;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        fill: variables.$gray-40;
+      }
+    }
+    
   }
 }
