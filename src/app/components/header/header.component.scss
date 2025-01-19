@@ -1,0 +1,11 @@
+@use '../../ui/styles/mixins.scss' as mixin;
+
+.header {
+  @include mixin.fixed(25px, 2);
+  top: 0;
+  left: 0;
+
+  svg {
+    @include mixin.radius(60px, auto, 0);
+  }
+}
