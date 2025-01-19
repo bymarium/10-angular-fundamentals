@@ -15,38 +15,22 @@
 
   &__item {
     font-size: 16px;
-
-    a {
-      @include mixin.flex(row, flex-start, center, 0);
-      color: variables.$gray-60;
-      transition: color 0.3s ease;
-
-      svg {
-        @include mixin.radius(17px, auto, 0);
-
-        path {
-          color: variables.$gray-60;
-          transition: color 0.3s ease;
-        }
-      }
-
-      &:hover {
-        color: variables.$gray-40;
-      }
-    }
   }
 
-  &__icon {
-    @include mixin.radius(17px, auto, 0);
+  &__icon{
+    @include mixin.radius(17px, 17px, 0);
+  }
 
-    path {
-      color: variables.$gray-60;
-      transition: color 0.3s ease;
-      
-      &:hover {
-        fill: variables.$gray-40;
-      }
+  a {
+    @include mixin.flex(row, flex-start, center, 0);
+  }
+
+  a, use {
+    color: variables.$gray-60;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: variables.$gray-40;
     }
-    
   }
 }
