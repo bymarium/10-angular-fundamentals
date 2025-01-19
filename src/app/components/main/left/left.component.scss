@@ -1,0 +1,89 @@
+@use '../../../ui/styles/variables.scss' as variables;
+@use '../../../ui/styles/mixins.scss' as mixin;
+
+.left {
+  @include mixin.fixed(210px 242px, 0);
+  max-width: 50%;
+
+  &__logo {
+    @include mixin.radius(75px, 75px, 20px);
+  }
+
+  &__alert {
+    @include mixin.flex(row, flex-start, center, 0);
+    border-radius: 8px;
+    margin-top: 35px;
+
+    h4 {
+      @include mixin.flex(row, flex-start, stretch, 10px);
+      background-color: variables.$yellow-dark;
+      padding: 9px 12px;
+      padding-right: 120px;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: 500;
+      color: variables.$yellow;
+
+      span {
+        background-color: variables.$yellow;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 30px;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  &__actions {
+    @include mixin.flex(row, flex-start, stretch, 10px);
+    margin-top: 30px;
+  }
+
+  &__action {
+    span {
+      @include mixin.flex(row, flex-start, center, 0);
+      background-color: variables.$pink;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: variables.$pink-dark;
+      }
+    }
+  }
+
+  &__phrase {
+    margin-top: 60px;
+
+    a {
+      @include mixin.flex(column, flex-start, stretch, 8px);
+    }
+
+    span:nth-child(1) {
+      color: variables.$gray-40;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    span:nth-child(2) {
+      color: variables.$gray-60;
+      font-size: 18px;
+    }
+
+    &:hover {
+      span:nth-child(1) {
+        color: variables.$white;
+      }
+    }
+  }
+}
