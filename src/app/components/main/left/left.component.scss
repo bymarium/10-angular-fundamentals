@@ -3,7 +3,7 @@
 
 .left {
   @include mixin.fixed(210px 242px, 0);
-  max-width: 50%;
+  max-width: 50vw;
 
   &__logo {
     @include mixin.radius(75px, 75px, 20px);
@@ -16,29 +16,20 @@
 
     h4 {
       @include mixin.flex(row, flex-start, stretch, 10px);
-      background-color: variables.$yellow-dark;
-      padding: 9px 12px;
+      @include mixin.letter(variables.$yellow-dark, variables.$yellow, 9px 12px, 7px, 16px, 500);
       padding-right: 120px;
-      border-radius: 7px;
-      font-size: 16px;
-      font-weight: 500;
-      color: variables.$yellow;
 
       span {
-        background-color: variables.$yellow;
-        padding: 3px 8px;
-        border-radius: 4px;
-        font-weight: bold;
-        font-size: 13px;
+        @include mixin.letter(variables.$yellow, variables.$white, 3px 8px, 4px, 13px, 700);
       }
     }
   }
 
   &__title {
     margin-top: 30px;
-    font-size: 55px;
+    font-size: 56px;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1;
   }
 
   &__actions {
@@ -49,11 +40,7 @@
   &__action {
     span {
       @include mixin.flex(row, flex-start, center, 0);
-      background-color: variables.$pink;
-      padding: 10px 15px;
-      border-radius: 20px;
-      font-weight: 500;
-      font-size: 16px;
+      @include mixin.letter(variables.$pink, variables.$white, 10px 15px, 20px, 16px, 500);
       transition: background-color 0.3s ease;
 
       &:hover {
