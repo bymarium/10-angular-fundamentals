@@ -15,7 +15,7 @@
   
   <div class="article__actions">
     @for (action of actions; track $index) {
-      <app-action [svg]="action.svg" [title]="action.title"></app-action>
+      <app-action [svg]="action.svg" [title]="action.title" (click)="$event"></app-action>
     }
   </div>
 </article>

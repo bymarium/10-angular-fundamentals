@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 
 @Component({
   selector: 'app-left',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './left.component.scss'
 })
 export class LeftComponent {
+  public click = output<boolean>();
 
+  public openModal() {
+    this.click.emit(true);
+  }
 }
