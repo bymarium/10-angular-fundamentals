@@ -1,12 +1,8 @@
 <section>
   <div class="right">
-    <app-article [svg]="arrow.svg" [color]="arrow.color" [classModifier]="arrow.classModifier" [titleModifier]="arrow.titleModifier" [title]="arrow.title" [pictures]="arrow.pictures"></app-article>
-    <app-article [svg]="swap.svg" [color]="swap.color" [title]="swap.title" [pictures]="swap.pictures"></app-article>
-    <app-article [svg]="activity.svg" [color]="activity.color" [title]="activity.title" [pictures]="activity.pictures"></app-article>
-    <app-article [svg]="explore.svg" [color]="explore.color" [modifier]="explore.modifier" [title]="explore.title" [pictures]="explore.pictures"></app-article>
-    <app-article [svg]="token.svg" [color]="token.color" [modifier]="token.modifier" [title]="token.title" [pictures]="token.pictures"></app-article>
-    <app-article [svg]="stake.svg" [color]="stake.color" [title]="stake.title" [pictures]="stake.pictures"></app-article>
-    <app-article [svg]="browser.svg" [color]="browser.color" [title]="browser.title" [pictures]="browser.pictures"></app-article>
+    @for (article of articles; track $index) {
+      <app-article [svg]="article.svg" [color]="article.color" [classModifier]="article.classModifier" [titleModifier]="article.titleModifier" [modifier]="article.modifier" [title]="article.title" [pictures]="article.pictures"></app-article>
+    }
     <app-informative-article (click)="$event"></app-informative-article>
   </div>
 </section>

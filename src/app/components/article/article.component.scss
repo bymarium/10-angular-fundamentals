@@ -97,7 +97,7 @@
 
   &__circle {
     @include mixin.radius(370px, 370px, 50%);
-    @include mixin.image(370px, 40%);
+    @include mixin.image(370px, 10%);
     background-color: variables.$red-light;
     position: absolute;
   }
