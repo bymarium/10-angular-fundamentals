@@ -10,7 +10,7 @@ picture {
 }
 
 .article__video {
-  @include mixin.image(31%, -69%);
+  @include mixin.image(31%, 10px);
   position: absolute;
   margin-left: -107px;
 

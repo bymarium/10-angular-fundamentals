@@ -5,23 +5,13 @@
     </svg>
   </div>
   <span class="article__title article__title--{{titleModifier()}}" [innerHTML]="title()"></span>
-  @if (color() == 'red') {
-    <div class="article__circle"></div>
-    <div class="article__pictures article__pictures--{{modifier()}}">
-      @for (picture of pictures(); track $index) {
-        <app-picture [name]="picture.name" [dark]="picture.dark" [light]="picture.light" [alt]="picture.alt"></app-picture>
-      }
-      <app-video></app-video>
-    </div>
-  } @else if (pictures().length > 1) {
-    <div class="article__pictures article__pictures--{{modifier()}}">
-      @for (picture of pictures(); track $index) {
-        <app-picture [name]="picture.name" [dark]="picture.dark" [light]="picture.light" [alt]="picture.alt"></app-picture>
-      }
-    </div>
-  } @else {
-    @for (picture of pictures(); track $index) {
-      <app-picture [name]="picture.name" [dark]="picture.dark" [light]="picture.light" [alt]="picture.alt"></app-picture>
+  <div class="article__pictures article__pictures--{{modifier()}}">
+    @if (color() == 'red') {
+      <div class="article__circle"></div>
+      <app-video/>
     }
-  }
+    @for (picture of pictures(); track $index) {
+      <app-picture [name]="picture.name" [dark]="picture.dark" [light]="picture.light" [alt]="picture.alt"/>
+    }
+  </div>
 </article>

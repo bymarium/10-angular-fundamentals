@@ -10,68 +10,70 @@ picture {
   }
 }
 
-.article__bg {
-  @include mixin.image(100%, 40%);
-}
-
-.article__device {
-  @include mixin.image(38%, -65%);
-  margin-left: 31%;
-}
-
-.article__coin-left {
-  @include mixin.image(28%, 22%);
-  position: absolute;
-  left: 20px;
-}
-
-.article__device-blue {
-  @include mixin.image(60%, 0);
-  margin: 40px auto 0px;
-
-}
-
-.article__coin-right {
-  @include mixin.image(20%, -45%);
-  position: absolute;
-  right: 45px;
-}
-
-.article__activity img {
-  @include mixin.flex(row, center, center, 0);
-  @include mixin.image(70%, 32px);
-}
-
-.article__device-1,
-.article__device-2,
-.article__device-3 {
-  @include mixin.image(90%, 0);
-}
-
-.article__device-mask {
-  @include mixin.image(35%, auto);
-  margin: 0 auto;
-  
-  img {
-    z-index: 1;
+.article {
+  &__bg {
+    @include mixin.image(100%, 40%);
   }
-}
 
-.article__stake {
-  @include mixin.image(100%, 22px);
-}
-
-.article__browser {
-  @include mixin.image(90%, 40px);
-
-  img {
-    @include mixin.flex(row, flex-start, center, 0);
-    border-bottom-left-radius: 40px;
+  &__device {
+    @include mixin.image(38%, -65%);
+    margin-left: 31%;
   }
-}
 
-.article__device-gray {
-  @include mixin.image(35%, -80%);
-  position: absolute;
-  margin-left: -250px;
+  &__coin-left {
+    @include mixin.image(28%, 22%);
+    position: absolute;
+    left: 20px;
+  }
+
+  &__device-blue {
+    @include mixin.image(60%, 0);
+    margin: 40px auto 0px;
+
+  }
+
+  &__coin-right {
+    @include mixin.image(20%, -45%);
+    position: absolute;
+    right: 45px;
+  }
+
+  &__activity img {
+    @include mixin.flex(row, center, center, 0);
+    @include mixin.image(70%, 32px);
+  }
+
+  &__device-1,
+  &__device-2,
+  &__device-3 {
+    @include mixin.image(90%, 0);
+  }
+
+  &__device-mask {
+    @include mixin.image(35%, auto);
+    margin: 0 auto;
+
+    img {
+      z-index: 1;
+    }
+  }
+
+  &__stake {
+    @include mixin.image(100%, 22px);
+  }
+
+  &__browser {
+    @include mixin.image(90%, 40px);
+
+    img {
+      @include mixin.flex(row, flex-start, center, 0);
+      border-bottom-left-radius: 40px;
+    }
+  }
+
+  &__device-gray {
+    @include mixin.image(35%, -80%);
+    position: absolute;
+    margin-left: -250px;
+  }
 }

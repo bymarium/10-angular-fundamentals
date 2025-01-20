@@ -16,56 +16,52 @@ import { InformativeArticleComponent } from "../../informative-article/informati
   styleUrl: './right.component.scss'
 })
 export class RightComponent {
-  public arrow = {
-    svg: 'arrow',
-    color: 'arrow',
-    classModifier: 'arrow',
-    titleModifier: 'mini',
-    title: 'EXPLORE <br> GLOW FEATURES',
-    pictures: picturesArrow
-  }
-
-  public swap = {
-    svg: 'swap',
-    color: 'blue',
-    title: 'Swap Coins with Zero Fees',
-    pictures: picturesSwap
-  }
-
-  public activity = {
-    svg: 'activity',
-    color: 'orange',
-    title: 'All your activity. In one place.',
-    pictures: picturesActivity
-  }
-
-  public explore = {
-    svg: 'explore',
-    color: 'green',
-    modifier: 'three',
-    title: 'Effortlessly Explore NFTs',
-    pictures: picturesExplore
-  }
-
-  public token = {
-    svg: 'token',
-    color: 'red',
-    modifier: 'circle',
-    title: 'Received spam tokens? <br> Burn them and earn SOL.',
-    pictures: picturesToken
-  }
-
-  public stake = {
-    svg: 'stake',
-    color: 'purple',
-    title: 'Stake and Earn SOL',
-    pictures: picturesStake
-  }
-
-  public browser = {
-    svg: 'browser',
-    color: 'mustard',
-    title: 'Connect to apps on desktop, <br> and on-the-go.',
-    pictures: picturesBrowser
-  }
+  public articles = [
+    {
+      svg: 'arrow',
+      color: 'arrow',
+      classModifier: 'arrow',
+      titleModifier: 'mini',
+      title: 'EXPLORE <br> GLOW FEATURES',
+      pictures: picturesArrow
+    },
+    {
+      svg: 'swap',
+      color: 'blue',
+      title: 'Swap Coins with Zero Fees',
+      pictures: picturesSwap
+    },
+    {
+      svg: 'activity',
+      color: 'orange',
+      title: 'All your activity. In one place.',
+      pictures: picturesActivity
+    },
+    {
+      svg: 'explore',
+      color: 'green',
+      modifier: 'three',
+      title: 'Effortlessly Explore NFTs',
+      pictures: picturesExplore
+    },
+    {
+      svg: 'token',
+      color: 'red',
+      modifier: 'circle',
+      title: 'Received spam tokens? <br> Burn them and earn SOL.',
+      pictures: picturesToken
+    },
+    {
+      svg: 'stake',
+      color: 'purple',
+      title: 'Stake and Earn SOL',
+      pictures: picturesStake
+    },
+    {
+      svg: 'browser',
+      color: 'mustard',
+      title: 'Connect to apps on desktop, <br> and on-the-go.',
+      pictures: picturesBrowser
+    }
+  ];
 }
