@@ -72,29 +72,6 @@
       padding: 30px;
       line-height: 1.4;
     }
-
-    &--highlight {
-      margin-top: 55px;
-      background: variables.$gradient-color;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 40px;
-      font-weight: bold;
-    }
-  }
-
-  h4 {
-    margin-top: 30px;
-    font-size: 23px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  h5 {
-    font-size: 16px;
-    font-weight: normal;
-    margin: 20px;
-    text-align: center;
   }
 
   &__pictures {

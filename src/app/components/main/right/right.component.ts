@@ -7,10 +7,11 @@ import { picturesExplore } from './pictures/explore';
 import { picturesToken } from './pictures/token';
 import { picturesStake } from './pictures/stake';
 import { picturesBrowser } from './pictures/browser';
+import { InformativeArticleComponent } from "../../informative-article/informative-article.component";
 
 @Component({
   selector: 'app-right',
-  imports: [ArticleComponent],
+  imports: [ArticleComponent, InformativeArticleComponent],
   templateUrl: './right.component.html',
   styleUrl: './right.component.scss'
 })
