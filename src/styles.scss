@@ -27,13 +27,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  @include mixin.theme(variables.$gray-90, variables.$white);
 }
 
 html {
   font-family: "Roobert", Noto Sans, Noto Sans JP, Noto Sans KR, Noto Sans SC, Noto Sans TC;
+  @include mixin.theme(variables.$gray-90, variables.$white);
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
