@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-action',
@@ -9,4 +9,10 @@ import { Component, input } from '@angular/core';
 export class ActionComponent {
   public svg = input<string>();
   public title = input<string>();
+
+  public click = output<boolean>();
+
+  public openModal() {
+    this.click.emit(true);
+  }
 }

@@ -1,4 +1,5 @@
 <main>
-  <app-left/>
-  <app-right/>
+  <app-modal [open]="isOpen" (clickClose)="$event ? isOpen = true : isOpen = false"></app-modal>
+  <app-left (click)="$event ? isOpen = true : isOpen = false"></app-left>
+  <app-right (click)="$event ? isOpen = true : isOpen = false"></app-right>
 </main>

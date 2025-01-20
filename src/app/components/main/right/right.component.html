@@ -7,6 +7,6 @@
     <app-article [svg]="token.svg" [color]="token.color" [modifier]="token.modifier" [title]="token.title" [pictures]="token.pictures"></app-article>
     <app-article [svg]="stake.svg" [color]="stake.color" [title]="stake.title" [pictures]="stake.pictures"></app-article>
     <app-article [svg]="browser.svg" [color]="browser.color" [title]="browser.title" [pictures]="browser.pictures"></app-article>
-    <app-informative-article></app-informative-article>
+    <app-informative-article (click)="$event"></app-informative-article>
   </div>
 </section>
