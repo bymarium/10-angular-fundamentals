@@ -26,10 +26,6 @@
   &__logo {
     width: 52px;
     background-color: variables.$modal-bg;
-
-    svg {
-      background: none;
-    }
   }
 
   &__qrcode {
@@ -40,14 +36,12 @@
 
     img {
       width: 100%;
-      background: none
     }
   }
 
   &__title {
     font-size: 18px;
     text-align: center;
-    background: none;
     line-height: 1.3;
   }
 
@@ -56,7 +50,20 @@
     font-size: 14px;
     text-align: center;
     font-weight: normal;
-    background: none;
     line-height: 1.5;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .modal {
+    background-color: variables.$modal-bg-lg;
+
+    &__content, &__logo {
+      background-color: variables.$white;
+    }
+
+    &__content {
+      box-shadow: variables.$shadow-modal-lg;
+    }
   }
 }

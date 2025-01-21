@@ -41,3 +41,17 @@
     margin-top: 10px;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  .article {
+    background-color: variables.$gray-10;
+
+    &__title {
+      color: variables.$black;
+
+      &--mini {
+        color: variables.$gray-70;
+      }
+    }
+  }
+}

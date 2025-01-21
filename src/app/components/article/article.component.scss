@@ -102,3 +102,32 @@
     position: absolute;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  .article {
+    background-color: variables.$gray-10;
+
+    &__icon {
+      use {
+        color: variables.$white;
+      }
+
+      &--arrow {
+        background-color: variables.$white;
+
+        svg use {
+          color: variables.$gray-70;
+        }
+      }
+    }
+
+    &__title {
+      background: none;
+      color: variables.$black;
+
+      &--mini {
+        color: variables.$gray-70;
+      }
+    }
+  }
+}
