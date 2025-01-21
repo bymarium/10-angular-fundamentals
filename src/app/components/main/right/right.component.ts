@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 import { ArticleComponent } from '../../article/article.component';
 import { picturesArrow } from './pictures/arrow';
 import { picturesSwap } from './pictures/swap';
@@ -64,4 +64,10 @@ export class RightComponent {
       pictures: picturesBrowser
     }
   ];
+
+  public onClick = output<boolean>();
+
+  propagateClick(event: boolean) {
+    this.onClick.emit(event);
+  }
 }

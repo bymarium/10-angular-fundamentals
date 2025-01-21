@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ActionComponent } from './action/action.component';
 
@@ -55,4 +55,10 @@ export class InformativeArticleComponent {
   }
 
   public actions = [this.iOS, this.android]
+
+  public onClick = output<boolean>();
+
+  propagateClick(event: boolean) {
+    this.onClick.emit(event);
+  }
 }
