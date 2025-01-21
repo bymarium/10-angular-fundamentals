@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-video',
@@ -7,4 +7,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './video.component.scss'
 })
 export class VideoComponent {
+ 
 }

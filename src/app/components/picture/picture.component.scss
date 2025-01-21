@@ -50,8 +50,9 @@ picture {
   }
 
   &__device-mask {
-    @include mixin.image(35%, auto);
-    margin: 0 auto;
+    @include mixin.image(35%, -69% !important);
+    left: 32.5%;
+    position: absolute;
 
     img {
       z-index: 1;
