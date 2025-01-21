@@ -39,8 +39,3 @@ html {
     @include mixin.theme(variables.$white, variables.$black);
   }
 }
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}

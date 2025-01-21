@@ -5,9 +5,8 @@
 
   <div class="article__navigations">
     @for (navigation of navigations; track $index) {
-      <app-navigation [url]="navigation.url" [image]="navigation.image" [alt]="navigation.alt" [title]="navigation.title"></app-navigation>
+      <app-navigation [url]="navigation.url" [image]="navigation.image" [alt]="navigation.alt" [title]="navigation.title" [modifier]="navigation.modifier"></app-navigation>
     }
-    <app-navigation [url]="brave.url" [image]="brave.image" [alt]="brave.alt" [title]="brave.title" [modifier]="brave.modifier"></app-navigation>
   </div>
 
   <h4>Mobile</h4>

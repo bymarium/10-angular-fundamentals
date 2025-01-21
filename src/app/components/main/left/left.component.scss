@@ -73,6 +73,11 @@
       }
     }
   }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 @media (prefers-color-scheme: light) {
