@@ -7,13 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  public links =[
-    'https://docs.glow.app/',
-    'https://glow.app/support',
-    'https://glow.app/terms',
-    'https://glow.app/privacy-policy',
-    'https://glow.app/bug-bounty',
-    'https://twitter.com/glowwallet'
-  ];
-  public names = ['Docs', 'Support', 'Terms', 'Privacy', 'Bug Bounty'];
+  public items = [
+    {link: 'https://docs.glow.app/', name: 'Docs'},
+    {link: 'https://glow.app/support', name: 'Support'},
+    {link: 'https://glow.app/terms', name: 'Terms'},
+    {link: 'https://glow.app/privacy-policy', name: 'Privacy'},
+    {link: 'https://glow.app/bug-bounty', name: 'Bug Bounty'},
+    {link: 'https://twitter.com/glowwallet'}
+  ]
 }

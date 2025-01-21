@@ -16,6 +16,12 @@ import { InformativeArticleComponent } from "../../informative-article/informati
   styleUrl: './right.component.scss'
 })
 export class RightComponent {
+  public onClick = output<boolean>();
+
+  propagateClick(event: boolean) {
+    this.onClick.emit(event);
+  }
+  
   public articles = [
     {
       svg: 'arrow',
@@ -64,10 +70,4 @@ export class RightComponent {
       pictures: picturesBrowser
     }
   ];
-
-  public onClick = output<boolean>();
-
-  propagateClick(event: boolean) {
-    this.onClick.emit(event);
-  }
 }
