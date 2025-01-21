@@ -10,9 +10,9 @@ export class ActionComponent {
   public svg = input<string>();
   public title = input<string>();
 
-  public click = output<boolean>();
+  public onClick = output<boolean>();
 
   public openModal() {
-    this.click.emit(true);
+    this.onClick.emit(true);
   }
 }

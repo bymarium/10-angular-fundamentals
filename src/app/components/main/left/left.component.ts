@@ -7,9 +7,9 @@ import { Component, output } from '@angular/core';
   styleUrl: './left.component.scss'
 })
 export class LeftComponent {
-  public click = output<boolean>();
+  public onClick = output<boolean>();
 
   public openModal() {
-    this.click.emit(true);
+    this.onClick.emit(true);
   }
 }

@@ -11,4 +11,8 @@ import { ModalComponent } from "../modal/modal.component";
 })
 export class MainComponent {
   public isOpen: boolean = false;
+
+  openModal(event: boolean) {
+    this.isOpen = event;
+  }
 }
