@@ -74,3 +74,38 @@
     }
   }
 }
+
+@media (prefers-color-scheme: light) {
+  .left {
+    &__alert {
+      h4 {
+        color: variables.$orange !important;
+      }
+
+      span {
+        color: variables.$white;
+        background-color: variables.$orange !important;
+      }
+    }
+
+    &__action span {
+      color: variables.$white;
+    }
+
+    &__phrase {
+      span:nth-child(1) {
+        color: variables.$gray-70;
+      }
+
+      span:nth-child(2) {
+        color: variables.$gray-50;
+      }
+
+      &:hover {
+        span:nth-child(1) {
+          color: variables.$gray-90;
+        }
+      }
+    }
+  }
+}

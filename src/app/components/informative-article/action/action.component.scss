@@ -27,3 +27,16 @@
     background-color: variables.$gray-40;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  .article__action {
+    background-color: variables.$gray-80;
+    span, use {
+      color: variables.$white;
+    }
+
+    &:hover {
+      background-color: variables.$gray-70;
+    }
+  }
+}
